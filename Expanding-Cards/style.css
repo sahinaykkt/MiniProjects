@@ -1,1 +1,44 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+}
 
+.container {
+    display: flex;
+    width: 90vw;
+}
+
+.panel {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 80vh;
+    border-radius: 50px;
+    color: rgb(240, 234, 234);
+    cursor: pointer;
+    flex: 0.5;
+    position: relative;
+    margin: 10px;
+    transition: flex 0.7s ease-in;
+}
+
+h3 {
+    font-size: 20px;
+    position: absolute;
+    bottom: 25px;
+    left: 5px;
+    opacity: 0;
+    font-family: Segoe UI;
+}
+
+.panel.active {
+    flex: 4;
+}
+
+.panel.active h3 {
+    opacity: 1;
+}
