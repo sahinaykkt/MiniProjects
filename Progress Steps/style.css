@@ -36,7 +36,7 @@ body {
     height: 4px;
     width: 100%;
     z-index: -1;
-  }
+}
 
 .progress {
     background-color: rgb(90, 90, 218);
@@ -53,7 +53,7 @@ body {
 .circle {
     background-color: rgb(90, 90, 218);
     color: #999;
-    border-radius:50%;
+    border-radius: 50%;
     height: 30px;
     width: 30px;
     display: flex;
@@ -62,12 +62,13 @@ body {
     border: 3px solid #999;
     transition: .4 ease;
 }
+
 .circle.active {
     border-color: rgb(53, 53, 88);
 }
 
 .btn {
-    background-color:yellowgreen;
+    background-color: yellowgreen;
     border: 1px;
     border-radius: 5px;
     cursor: pointer;
@@ -79,9 +80,11 @@ body {
 .btn:active {
     transform: scale(0.95);
 }
+
 .btn:focus {
     outline: 0;
 }
+
 .btn:disabled {
     cursor: not-allowed;
     background-color: #999;
